@@ -23,6 +23,7 @@ export default function Home() {
         stock.code.toLowerCase().includes(keyword) ||
         stock.name.toLowerCase().includes(keyword);
 
+        // Filter saham berdasarkan arah perubahan harga.
       const matchesFilter =
         filter === "all" ||
         (filter === "up" && stock.change > 0) ||
